@@ -9,11 +9,11 @@ body{
 
 .navv
 {
-    background-color: rgba(70, 71, 73, 0.8); /* Bootstrap dark gray + 0.8 شفاف */
+    background-color: rgba(70, 71, 73, 0.8); 
    z-index: 9999;
 }
 
-.home {
+/* .home {
   background-image: url(./img/premium_photo-1661962305366-0c62646fd249.avif); 
   background-size: cover;
   background-position: center;
@@ -23,7 +23,7 @@ body{
 }
 
 .overlay {
-  background-color: rgba(68, 68, 68, 0.7); /* أقل شوية عشان النص يظهر أوضح */
+  background-color: rgba(68, 68, 68, 0.7); 
   height: 100%;
   width: 100%;
   position: absolute;
@@ -35,7 +35,29 @@ body{
   align-items: center;
   text-align: center;
   padding: 0 1rem;
+} */
+
+.home {
+  background-image: url('./img/premium_photo-1661962305366-0c62646fd249.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;   /* بدل height */
+  position: relative;
 }
+
+.overlay {
+  position: absolute;
+  inset: 0;            /* بدل height + width */
+  background-color: rgba(68, 68, 68, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
 
 .btnn
 {
