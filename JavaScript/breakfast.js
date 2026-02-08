@@ -1,6 +1,7 @@
 
 var breakfast = [];
 var breakfastReq = new XMLHttpRequest();
+document.querySelector('.row').innerHTML ='<h4 class="text-center h1 text-danger">Loading...</h4>';
 breakfastReq.open( 'get' , 'https://forkify-api.herokuapp.com/api/v2/recipes?search=breakfast' );
 breakfastReq.send();
 breakfastReq.addEventListener( 'loadend' , function(){
